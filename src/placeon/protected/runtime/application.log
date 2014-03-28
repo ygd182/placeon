@@ -1,0 +1,793 @@
+2014/03/28 09:53:48 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/tesis-android/src/pagina tesis/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/tesis-android/src/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/var/www/tesis-...')
+#1 /var/www/tesis-android/src/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /var/www/tesis-android/src/pagina tesis/protected/modules/cruge/controllers/UiController.php(36): CAssetManager->publish('/var/www/tesis-...')
+#3 /var/www/tesis-android/src/pagina tesis/protected/modules/cruge/controllers/UiController.php(28): UiController->registerScripts()
+#4 /var/www/tesis-android/src/framework/web/CWebApplication.php(281): UiController->init()
+#5 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('cruge/ui/login')
+#6 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#8 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/cruge/ui/login
+HTTP_REFERER=http://localhost/tesis-android/src/
+---
+2014/03/28 09:54:02 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/tesis-android/src/pagina tesis/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/tesis-android/src/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/var/www/tesis-...')
+#1 /var/www/tesis-android/src/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /var/www/tesis-android/src/pagina tesis/protected/modules/cruge/controllers/UiController.php(36): CAssetManager->publish('/var/www/tesis-...')
+#3 /var/www/tesis-android/src/pagina tesis/protected/modules/cruge/controllers/UiController.php(28): UiController->registerScripts()
+#4 /var/www/tesis-android/src/framework/web/CWebApplication.php(281): UiController->init()
+#5 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('cruge/ui/login')
+#6 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#8 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/cruge/ui/login
+HTTP_REFERER=http://localhost/tesis-android/src/
+---
+2014/03/28 09:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3214525&currentLon=-59.1439865
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:56:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3214525&currentLon=-59.1439865
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=null&currentLon=null
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:58:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:58:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:58:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:58:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:58:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:58:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:58:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:58:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:59:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:59:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:59:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:59:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:59:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:59:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:59:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:59:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/SetLastUpdate".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/SetLa...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/SetLastUpdate
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:59:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/SetLastUpdate".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/SetLa...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/SetLastUpdate
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:59:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 09:59:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:00:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:00:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:00:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:00:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:00:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:00:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:00:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:00:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:01:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:01:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:01:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:01:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:01:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:01:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:01:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:01:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:01:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:01:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:02:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:02:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:02:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:02:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:02:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:02:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:02:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:03:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:04:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:05:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=null&currentLon=null
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:05:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:06:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:06:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:06:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:06:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:06:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:06:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:06:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:06:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:06:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.3215317&currentLon=-59.144585
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:06:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:07:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:07:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:07:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:07:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:07:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:07:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:07:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:07:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:07:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:08:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:08:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:08:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:08:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:08:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:08:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
+2014/03/28 10:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "crugeUser/getFriendsNotifications".' in /var/www/tesis-android/src/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tesis-android/src/framework/web/CWebApplication.php(141): CWebApplication->runController('crugeUser/getFr...')
+#1 /var/www/tesis-android/src/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tesis-android/src/pagina tesis/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/tesis-android/src/pagina%20tesis/index.php/crugeUser/getFriendsNotifications?currentLat=-37.321494&currentLon=-59.14458869999999
+HTTP_REFERER=http://localhost/tesis-android/src/pagina%20tesis/index.php/site/map
+---
