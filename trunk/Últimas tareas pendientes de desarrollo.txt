@@ -1,0 +1,6 @@
+crear state con imagen
+permitir filter midiendo la distancia a otro punto, no solamente acutal posición
+tags a los usuarios para facilitar búsqueda
+amistad que genera solicitud pendiente al otro
+más campos obligatorios para registrarse
+permitir español o inglés, o al menos pasar todo a un mismo idioma
