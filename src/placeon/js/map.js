@@ -100,8 +100,8 @@ function locateStatePins() {
 
 function keepAlive(latitude, longitude) {
     $.get('../cruge/ui/keepAlive', function(data) {
-        if (data == "OK") getFriendsNotification(latitude, longitude);
-        else window.location = '../site/index';
+        if (data != "OK") 
+         window.location = '../site/index';
     });
 }
 
@@ -151,6 +151,7 @@ function onSuccess(pos) {
         var latlng = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
         marker.setPosition(latlng);
     } else marker = addMarker(center, "me", "../../images/images/yellow-pin.png");
+    getFriendsNotification(center.latitude, center.longitude);
 }
 // Error function for Geolocation call
 function onError(msg) {
@@ -167,14 +168,14 @@ function calculateMyPosition() {
 function timeout_callback() {
     calculateMyPosition();
     getFriendsPositions();
-    getFriendsNotification(localStorage.getItem('latitude'), localStorage.getItem('longitude'));
+    //getFriendsNotification(localStorage.getItem('latitude'), localStorage.getItem('longitude'));
 }
 jQuery(document).ready(function() {
     //console.log("ready");
     // $("#footer").text(calcTime('-3'));
     timeout_callback();
     if (navigator.geolocation) {
-        setInterval(timeout_callback, 6000);
+        setInterval(timeout_callback, 60000);
     } else {
         //If location is not supported on this platform, disable it
         //$('#getLocation').value = "Geolocation not supported";
@@ -185,7 +186,7 @@ jQuery(document).ready(function() {
         longitude: 0
     };
     initMap("map_canvas", center);
-    getFriendsPositions();
+    //getFriendsPositions();
     $("#geolocationEnableButton").click(function() {
         geolocateEnabled = !geolocateEnabled;
     });
