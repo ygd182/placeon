@@ -110,7 +110,7 @@ return array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../../../placeon_schema.sql',
 		),*/
 		// uncomment the following to use a MySQL database
-		
+		//LOCAL
 		'db'=>array(
 			'connectionString' => 'mysql:host=127.0.0.1;dbname=placeon_schema',
 			'emulatePrepare' => true,
@@ -118,6 +118,14 @@ return array(
 			'password' => '',
 			'charset' => 'utf8',
 		),
+    		  //HOST
+	/*	'db'=>array(
+			'connectionString' => 'mysql:host=mysql2.000webhost.com;dbname=a5749102_placeon',
+			'emulatePrepare' => true,
+			'username' => 'a5749102_placeon',
+			'password' => 'PlaceOn1',
+			'charset' => 'utf8',
+		),*/
 		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
