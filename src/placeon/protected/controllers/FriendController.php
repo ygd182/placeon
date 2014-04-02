@@ -6,7 +6,7 @@ class FriendController extends Controller
     $model = new Friend;
     $userId = Yii::app()->user->id;
     $data = $model->findAllByAttributes(array('id_user1' => $userId));
-    $friends = [];
+    $friends = array();
     foreach ($data as $key => $value) {
       $usuario = Yii::app()->user->um->loadUserById($value->id_user2);
       array_push($friends, $usuario);

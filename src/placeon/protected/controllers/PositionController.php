@@ -117,7 +117,7 @@ class PositionController extends Controller
   public function actionGetAll() {
     $userId = Yii::app()->user->id;
     $userPositionData = UserPositionRelation::model()->findAllByAttributes(array('id_user' => $userId));
-    $placePositions = [];
+    $placePositions = array();
     foreach ($userPositionData as $key => $userPosition) {
       $position = Position::model()->findByPk($userPosition->id_position);
       array_push($placePositions, $position);
@@ -135,7 +135,7 @@ class PositionController extends Controller
     $current_friends = $friendModel->findAllByAttributes(array('id_user1' => $userId)
      /*,array('order'=>'id_user1 DESC')*/
     );
-    $friends = [];
+    $friends = array();
     foreach ($current_friends as $friendKey => $friendVal) {
       $state = new State;
       $current_states = $state->findAllByAttributes(array('id_user' => $friendVal->id_user2));
@@ -156,7 +156,7 @@ class PositionController extends Controller
   public function actionGetFriend($id) {
     $friendModel = new Friend;
     $userId = Yii::app()->user->id;
-    $friends = [];
+    $friends = array();
     $usuario = Yii::app()->user->um->loadUserById($id
      /*, true (para que cargue sus campos)*/
     );
