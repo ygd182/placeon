@@ -17,15 +17,7 @@ class CrugeUserController extends Controller
      // allow all users to perform 'index' and 'view' actions
     'actions' => array(''), 'users' => array('*'),), array('allow',
      // allow authenticated user to perform 'create' and 'update' actions
-    'actions' => array('getAll', ' get', 'view', 'delete', 'getFriendsNotifications' . 'SetLastUpdate'), 'users' => array('@'),),
-     /*
-    array('allow', // allow admin user to perform 'admin' and 'delete' actions
-    'actions'=>array('create','update','index','view','admin','delete'),
-    'users'=>array('admin'),
-    ),
-    array('deny',  // deny all users
-    'users'=>array('*'),
-    ),*/
+    'actions' => array('getAll', ' get', 'view', 'delete', 'getFriendsNotifications','SetLastUpdate'), 'users' => array('@'),),
     );
   }
   
@@ -74,8 +66,6 @@ class CrugeUserController extends Controller
         $posLat = $pos->latitude;
         $posLon = $pos->longitude;
         $distance = $this->calculateDistance($currentLat, $currentLon, $posLat, $posLon);
-        $firephp = FirePHP::getInstance(true);
-        $firephp->log($distance, 'distance');
         if ($distance > $filterDistance) unset($allNotifications[$key]);
       }
     }
