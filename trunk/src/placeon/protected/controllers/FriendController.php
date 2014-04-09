@@ -77,8 +77,6 @@ class FriendController extends Controller
     $date = date('y/m/d h:i:s', time());
     $_POST['id_user1'] = $userId;
     $_POST['date'] = $date;
-    $firephp = FirePHP::getInstance(true);
-    $firephp->log($_POST, 'Datos');
     $model = new Friend;
     if (isset($_POST)) {
       $model->attributes = $_POST;
