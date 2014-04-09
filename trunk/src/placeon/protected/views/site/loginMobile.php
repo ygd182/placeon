@@ -20,8 +20,8 @@
 				<label for="CrugeLogon_rememberMe">Remember this machine:</label>
 			</div>
 			<div class="row buttons">
-				<input type="submit" value="Login" name="submit"><a href="/tesis/index.php/cruge/ui/pwdrec">Lost Password?</a>
-				<a href="/tesis/index.php/cruge/ui/registration">Register</a>
+				<input type="submit" value="Login" name="submit"><a href="/index.php/cruge/ui/pwdrec">Lost Password?</a>
+				<a href="/index.php/cruge/ui/registration">Register</a>
 			</div>
 		</form>
 	</div>
