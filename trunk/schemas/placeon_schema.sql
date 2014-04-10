@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.10.1deb1
+-- version 3.5.1
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 28-03-2014 a las 10:25:54
--- Versión del servidor: 5.5.35
--- Versión de PHP: 5.3.10-1ubuntu3.10
+-- Tiempo de generación: 10-04-2014 a las 21:50:28
+-- Versión del servidor: 5.5.24-log
+-- Versión de PHP: 5.3.13
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -249,7 +249,7 @@ CREATE TABLE IF NOT EXISTS `cruge_fieldvalue` (
   PRIMARY KEY (`idfieldvalue`),
   KEY `fk_cruge_fieldvalue_cruge_user1` (`iduser`),
   KEY `fk_cruge_fieldvalue_cruge_field1` (`idfield`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Volcado de datos para la tabla `cruge_fieldvalue`
@@ -262,10 +262,11 @@ INSERT INTO `cruge_fieldvalue` (`idfieldvalue`, `iduser`, `idfield`, `value`) VA
 (4, 7, 1, 0x31),
 (5, 3, 1, ''),
 (6, 4, 1, ''),
-(7, 3, 2, 0x31342f30332f32302030353a32303a343720706d),
+(7, 3, 2, 0x31342f30332f33302030343a32303a313120706d),
 (8, 4, 2, 0x31342f30332f32302031323a32363a313020616d),
 (9, 7, 2, ''),
-(10, 1, 2, '');
+(10, 1, 2, ''),
+(11, 2, 2, 0x31342f30342f30322031323a31323a353520616d);
 
 -- --------------------------------------------------------
 
@@ -286,7 +287,7 @@ CREATE TABLE IF NOT EXISTS `cruge_session` (
   `ipaddressout` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idsession`),
   KEY `crugesession_iduser` (`iduser`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=297 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=314 ;
 
 --
 -- Volcado de datos para la tabla `cruge_session`
@@ -588,7 +589,24 @@ INSERT INTO `cruge_session` (`idsession`, `iduser`, `created`, `expire`, `status
 (293, 4, 1395287175, 1395288975, 1, '127.0.0.1', 1, 1395287175, NULL, NULL),
 (294, 3, 1395345643, 1395347443, 0, '127.0.0.1', 1, 1395345643, NULL, NULL),
 (295, 4, 1396010600, 1396012400, 1, '127.0.0.1', 3, 1396011784, NULL, NULL),
-(296, 3, 1396011395, 1396013195, 1, '127.0.0.1', 2, 1396011936, NULL, NULL);
+(296, 3, 1396011395, 1396013195, 1, '127.0.0.1', 2, 1396011936, NULL, NULL),
+(297, 3, 1396207148, 1396208948, 0, '127.0.0.1', 1, 1396207148, 1396207180, '127.0.0.1'),
+(298, 3, 1396207185, 1396208985, 1, '127.0.0.1', 1, 1396207185, NULL, NULL),
+(299, 3, 1396314696, 1396316496, 0, '127.0.0.1', 1, 1396314696, NULL, NULL),
+(300, 3, 1396317642, 1396319442, 1, '127.0.0.1', 1, 1396317642, NULL, NULL),
+(301, 3, 1396370395, 1396372195, 1, '127.0.0.1', 1, 1396370395, NULL, NULL),
+(302, 3, 1396406497, 1396408297, 0, '127.0.0.1', 1, 1396406497, NULL, NULL),
+(303, 7, 1396408460, 1396410260, 0, '127.0.0.1', 1, 1396408460, 1396408487, '127.0.0.1'),
+(304, 3, 1396408492, 1396410292, 1, '127.0.0.1', 1, 1396408492, NULL, NULL),
+(305, 3, 1396456187, 1396457987, 0, '127.0.0.1', 2, 1396456767, NULL, NULL),
+(306, 3, 1396461635, 1396463435, 1, '127.0.0.1', 1, 1396461635, NULL, NULL),
+(307, 3, 1396551649, 1396553449, 1, '127.0.0.1', 1, 1396551649, NULL, NULL),
+(308, 3, 1397006215, 1397008015, 0, '127.0.0.1', 1, 1397006215, NULL, NULL),
+(309, 3, 1397009844, 1397011644, 0, '127.0.0.1', 1, 1397009844, NULL, NULL),
+(310, 3, 1397011872, 1397013672, 1, '127.0.0.1', 1, 1397011872, NULL, NULL),
+(311, 3, 1397104529, 1397106329, 1, '127.0.0.1', 2, 1397105790, NULL, NULL),
+(312, 3, 1397146303, 1397148103, 0, '127.0.0.1', 1, 1397146303, NULL, NULL),
+(313, 3, 1397148111, 1397149911, 0, '127.0.0.1', 1, 1397148111, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -652,11 +670,11 @@ CREATE TABLE IF NOT EXISTS `cruge_user` (
 INSERT INTO `cruge_user` (`iduser`, `regdate`, `actdate`, `logondate`, `username`, `email`, `password`, `authkey`, `state`, `totalsessioncounter`, `currentsessioncounter`) VALUES
 (1, NULL, NULL, 1394396797, 'admin', 'admin@tucorreo.com', 'admin', NULL, 1, 0, 0),
 (2, NULL, NULL, NULL, 'invitado', 'invitado', 'invitado', NULL, 1, 0, 0),
-(3, 1376845914, NULL, 1396011936, 'pepe', 'pepe@mail.com', 'pepe12', '2e0e9d031309f89fb3615618fd2b6288', 1, 0, 0),
+(3, 1376845914, NULL, 1397148111, 'pepe', 'pepe@mail.com', 'pepe12', '2e0e9d031309f89fb3615618fd2b6288', 1, 0, 0),
 (4, 1376845947, NULL, 1396011784, 'carlitos', 'carlitos@mail.com', 'carlitos', 'e2acd279dc6553e62bbab66999672ac1', 1, 0, 0),
 (5, 1378339184, NULL, NULL, 'juancito', 'aaa@aa.com', 'asdasdasd', 'ebab2001617d17a68440a776d4a8fb2a', 1, 0, 0),
 (6, 1378340060, NULL, 1378340915, 'figlio', 'f@m.com', 'figlio', '64d56d19e5e68b4b5bfe47ba10ca28b5', 1, 0, 0),
-(7, 1378698865, NULL, 1393187996, 'place1', 'place@m.com', 'place1', '9b655b917a892fdbb2bed16ada930f20', 1, 0, 0);
+(7, 1378698865, NULL, 1396408460, 'place1', 'place@m.com', 'place1', '9b655b917a892fdbb2bed16ada930f20', 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -691,7 +709,7 @@ CREATE TABLE IF NOT EXISTS `position` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `longitude` double NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Volcado de datos para la tabla `position`
@@ -701,7 +719,32 @@ INSERT INTO `position` (`latitude`, `date`, `id`, `longitude`) VALUES
 (0, '2014-03-11 00:00:00', 1, 0),
 (-37.3216807, '2014-03-20 12:25:59', 2, -59.12248969999999),
 (-37.3216652, '2014-03-20 12:48:22', 3, -59.1224833),
-(-37.3216652, '2014-03-20 12:48:32', 4, -59.1224833);
+(-37.3216652, '2014-03-20 12:48:32', 4, -59.1224833),
+(-37.321746999999995, '2014-04-08 11:54:13', 5, -59.122443399999995),
+(-37.321746999999995, '2014-04-08 11:55:21', 6, -59.122443399999995),
+(-37.321746999999995, '2014-04-08 11:57:36', 7, -59.122443399999995);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `shared_url_data`
+--
+
+CREATE TABLE IF NOT EXISTS `shared_url_data` (
+  `id_state` int(11) NOT NULL,
+  `url` varchar(2083) NOT NULL,
+  PRIMARY KEY (`id_state`),
+  KEY `id_state` (`id_state`),
+  KEY `id_state_2` (`id_state`),
+  KEY `id_state_3` (`id_state`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `shared_url_data`
+--
+
+INSERT INTO `shared_url_data` (`id_state`, `url`) VALUES
+(6, 'https://www.youtube.com/watch?v=luf5WUUXmhI');
 
 -- --------------------------------------------------------
 
@@ -720,7 +763,7 @@ CREATE TABLE IF NOT EXISTS `state` (
   KEY `id_user` (`id_user`),
   KEY `id_user_2` (`id_user`),
   KEY `id_position` (`id_position`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Volcado de datos para la tabla `state`
@@ -729,7 +772,8 @@ CREATE TABLE IF NOT EXISTS `state` (
 INSERT INTO `state` (`id`, `id_user`, `date`, `type`, `description`, `id_position`) VALUES
 (1, 4, '2014-03-20 12:25:54', 'State', 'p', 2),
 (2, 4, '2014-03-20 12:48:22', 'Announcement', 'a', 3),
-(3, 4, '2014-03-20 12:48:32', 'Announcement', 'a', 4);
+(3, 4, '2014-03-20 12:48:32', 'Announcement', 'a', 4),
+(6, 3, '2014-04-08 11:57:36', 'SharedUrl', 'rolling', 7);
 
 -- --------------------------------------------------------
 
@@ -796,6 +840,12 @@ ALTER TABLE `cruge_fieldvalue`
 ALTER TABLE `friend`
   ADD CONSTRAINT `friend_ibfk_3` FOREIGN KEY (`id_user1`) REFERENCES `cruge_user` (`iduser`),
   ADD CONSTRAINT `friend_ibfk_4` FOREIGN KEY (`id_user2`) REFERENCES `cruge_user` (`iduser`);
+
+--
+-- Filtros para la tabla `shared_url_data`
+--
+ALTER TABLE `shared_url_data`
+  ADD CONSTRAINT `shared_url_data_ibfk_1` FOREIGN KEY (`id_state`) REFERENCES `state` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `state`
