@@ -1,4 +1,4 @@
-<div id="mapContainer">
+<div id="mapContainer" class="ui-bar-c ui-corner-all ui-shadow po-border" >
 	<div id="map_canvas">
 	</div>
 </div>
