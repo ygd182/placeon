@@ -51,9 +51,14 @@ class SharedUrlDataController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
+     $this->layout = 'multipage-template-sharedUrl-view';
+     $model = $this->loadModel($id);
+		 // $image=Image::model()->findByPk($model->id_image);
+    $state = State::model()->with('position')->findByPk($id);
+    $this->render('view', array('model' => $model, 'state' => $state
+    
+    //  'image'=>$image
+    ));
 	}
 
 	/**

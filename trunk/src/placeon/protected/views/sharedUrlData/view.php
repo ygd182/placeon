@@ -18,10 +18,7 @@ $this->menu=array(
 
 <h1>View SharedUrlData #<?php echo $model->id_state; ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id_state',
-		'url',
-	),
-)); ?>
+<?php
+$this->renderPartial('../state/view', array('model'=>$state));
+$this->renderPartial('_view', array('data'=>$model));
+?>
