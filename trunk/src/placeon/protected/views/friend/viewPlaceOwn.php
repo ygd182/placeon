@@ -11,7 +11,7 @@
   <br />
   <br />
   <br />
-  <ul class="friendsList" data-role="listview" data-autodividers="false" data-inset="false" data-filter="false">
+  <ul class="friendsList" data-role="listview" data-autodividers="false" data-inset="true" data-filter="false">
     <?php $base=Yii::app()->request->baseUrl;
       foreach($placeReviews AS $placeReview){
       echo '<li data-theme="c"><a href=' . $base . '/index.php/search/view?id=' . $placeReview->id_place . '>';
@@ -29,7 +29,7 @@
   </ul>
   <br />
   <div data-role="panel" data-position="right" data-display="overlay" data-theme="a" id="notificationList">
-    <ul class="friendsList" data-role="listview" data-autodividers="false" data-inset="false" data-filter="false">
+    <ul class="friendsList" data-role="listview" data-autodividers="false" data-inset="true" data-filter="false">
       <?php $base=Yii::app()->request->baseUrl;
       foreach($allNotifications AS $notification){
         echo '<li data-theme="c"><a href=' . $base . '/index.php/search/view?id=' . $notification->id_place . '>';

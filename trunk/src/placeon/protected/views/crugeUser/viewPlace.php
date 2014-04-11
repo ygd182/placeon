@@ -12,7 +12,7 @@
     <a id="setAlertfilter" href="<?php echo Yii::app()->request->baseUrl;?>/index.php/alertfilter/create?user2=<?php echo($data->iduser); ?>" data-ajax="false" data-role="button" data-inline="true" data-theme="b" data-icon="gear" data-iconpos="left">Configure alert filter</a>
   <br />
   <h2>States</h2>
-  <ul class="friendsList" data-role="listview" data-autodividers="false" data-inset="false" data-filter="false">
+  <ul class="friendsList" data-role="listview" data-autodividers="false" data-inset="true" data-filter="false">
     <?php $base=Yii::app()->request->baseUrl;
       foreach($states AS $state){
          echo '<li data-theme="c">';
