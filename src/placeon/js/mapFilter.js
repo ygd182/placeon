@@ -47,6 +47,11 @@ function loadInfo(marker, content) {
         infowindow.open(map, this);
     });
 }
+
+   function updateMarkerPosition(latLng) {
+    $('#Position_latitude').val(latLng.lat());
+    $('#Position_longitude').val(latLng.lng());
+}
 //add pin to the map
 function addMarker(pos, info, image) {
     var latlng = new google.maps.LatLng(pos.latitude, pos.longitude);
@@ -54,8 +59,13 @@ function addMarker(pos, info, image) {
         map: map,
         animation: google.maps.Animation.Bounce,
         position: latlng,
+        draggable:true
         //icon: image 
     });
+   google.maps.event.addListener(marker, 'drag', function() {
+        updateMarkerPosition(marker.getPosition());
+        addCircle();
+      });
     if (image != null) marker.setIcon(image);
     loadInfo(marker, info);
     return marker;
