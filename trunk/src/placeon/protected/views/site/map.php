@@ -20,6 +20,7 @@
 					<li data-role="divider" data-theme="a" class="ui-li ui-li-static ui-btn-up-a ui-corner-top">Select state</li>
           <li> <a href="../State/create">State</a></li>
           <li> <a href="../Announcementdata/create">Announcement</a></li>
+          <li> <a href="../sharedurldata/create">Shared Link</a></li>
          <?php
          /*foreach($data AS $type){
              if($type!='State')
