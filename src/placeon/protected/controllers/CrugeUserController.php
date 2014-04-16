@@ -117,12 +117,12 @@ class CrugeUserController extends Controller
     
     if ($currentUserId == $id) {
       $states = $this->getNotifications($id);
-      $this->render('viewPlaceOwn', array('data' => $currentFriend, 'states' => $states));
+      $this->render('viewOwn', array('data' => $currentFriend, 'states' => $states));
     } else {
       if (!$isFriend) $this->render('viewNoFriend', array('data' => $currentFriend));
       else {
         $states = $this->getNotifications($id);
-        $this->render('viewPlace', array('data' => $currentFriend, 'states' => $states));
+        $this->render('view', array('data' => $currentFriend, 'states' => $states));
       }
     }
   }
