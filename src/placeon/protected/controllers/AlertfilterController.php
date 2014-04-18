@@ -52,45 +52,42 @@ class AlertfilterController extends Controller
   public function actionCreate($user2) {
     $this->layout = 'multipage-template-map-alertFilter';
     $currentUserId = Yii::app()->user->id;
-    $model = Alertfilter::model()->findByAttributes(array('user_1' => $currentUserId, 'user_2' => $user2));
+    $alertFilter = Alertfilter::model()->findByAttributes(array('user_1' => $currentUserId, 'user_2' => $user2));
     $position = new Position;
-    if (!$model) {
-      $model = new Alertfilter;
-      $model->user_1 = $currentUserId;
-      $model->user_2 = $user2;
-      $model->id_position = null;
+    if (!$alertFilter) {
+      $alertFilter = new Alertfilter;
+      $alertFilter->user_1 = $currentUserId;
+      $alertFilter->user_2 = $user2;
+      $alertFilter->id_position = null;
     } else {
-      if ($model->id_position != null) {
-        $position = Position::model()->findByPk($model->id_position);
+      if ($alertFilter->id_position != null) {
+        $position = Position::model()->findByPk($alertFilter->id_position);
       }
     }
-    
-    // Uncomment the following line if AJAX validation is needed
-    // $this->performAjaxValidation($model);
+
     if (isset($_POST['Alertfilter'])) {
-      $firephp = FirePHP::getInstance(true);
-      $firephp->log($_POST, 'alertfilter post');
-      $model->attributes = $_POST['Alertfilter'];
+      $alertFilter->attributes = $_POST['Alertfilter'];
       if (array_key_exists('id_position', $_POST['Alertfilter'])) {
         date_default_timezone_set('America/Argentina/Buenos_Aires');
         $date = date('y/m/d h:i:s', time());
-        $position->id_user = $currentUserId;
         $position->date = $date;
         $position->attributes = $_POST['Position'];
-        $position->save();
-        $model->id_position = $position->getPrimaryKey();
-      } else {
-        $model->id_position = null;
-      }
-      if ($model->save()) {
-        
-        //$this->redirect(array('view','id'=>$model->id));
-        //$this->redirect(array('update','id'=>$model->id));
-        $this->redirect(array('create', 'user2' => $model->user_2));
-      }
+        if($position->save()){
+          $alertFilter->id_position = $position->id;
+          if ($alertFilter->save()) {
+            $this->redirect(array('create', 'user2' => $alertFilter->user_2));
+            }
+        }
+       }else{
+          $alertFilter->id_position = null;
+          if ($alertFilter->save()) {
+            $position->delete();
+            $this->redirect(array('create', 'user2' => $alertFilter->user_2));
+           }
+       }
     }
     
-    $this->render('create', array('model' => $model, 'position' => $position));
+    $this->render('create', array('model' => $alertFilter, 'position' => $position));
   }
   
   /**
