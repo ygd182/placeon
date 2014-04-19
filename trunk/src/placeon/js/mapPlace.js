@@ -161,40 +161,15 @@ jQuery(document).ready(function() {
     });
     $("#savePlace").click(function(e) {
         e.preventDefault();
-        /* var latlng=selectedMarker.getPosition();
-    var data={'latitude':latlng.lat(), 'longitude':latlng.lng()};
-     $.ajax({
-      type: "POST",
-      url: "../position/savePosition",
-      data: data,
-      success :function(data){
-        setTimeout(function() {//espero 3 seg mostrando el alert y despues vuelve a la pag anterior
-          //window.location = "index";
-        },3000);
-        alert("Address added");
-      },
-      error: function(error){
-        alert("an error has ocurred, please try again later");
-      }
-    });*/
         saveAllPositions();
     });
-    $("#addAddress").click(function(e) {
-        var center = {
-            latitude: 0,
-            longitude: 0
-        };
-        var marker = addMarker(center, '', null, null);
-        google.maps.event.trigger(marker, 'click');
-    });
-    $("#deleteAddress").click(function(e) {
-        if (markerSelected())
-            if (selectedMarker.get('id') != null) deletePosition(selectedMarker.get('id'));
-            else {
-                selectedMarker.setMap(null);
-                deleteMarker(selectedMarker.get('id'));
-            } else alert("Please select a pin on the map first by clicking on it.");
-    });
+   $('.stateCreation').click(function(e) {
+        e.preventDefault();
+       if((localStorage.getItem('latitude')=== null)||( localStorage.getItem('longitude')=== null))
+        alert("First define your position.")
+       else
+        window.location=this.getAttribute("href");
+    }); 
 });
 
 function createPostArray() {
@@ -270,8 +245,12 @@ function loadPositionData(data) {
                 latitude: position.latitude,
                 longitude: position.longitude
             };
+            localStorage.setItem('latitude', center.latitude);
+            localStorage.setItem('longitude', center.longitude);
             var marker = addMarker(center, contentString, image, position.id);
         } else {
+          localStorage.removeItem('latitude');
+          localStorage.removeItem('longitude');
         addAddress();
     }
 }
