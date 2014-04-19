@@ -48,7 +48,7 @@ function loadInfo(marker, content) {
     });
 }
 
-   function updateMarkerPosition(latLng) {
+function updateMarkerPosition(latLng) {
     $('#Position_latitude').val(latLng.lat());
     $('#Position_longitude').val(latLng.lng());
 }
@@ -93,6 +93,7 @@ jQuery(document).ready(function() {
         $("#Position_longitude").val(localStorage.longitude);
         $("#Position_latitude").textinput('disable');
         $("#Position_longitude").textinput('disable');
+        myMarker.setDraggable(false);
     }
     localStorage.setItem('filterLatitude', $("#Position_latitude").val());
     localStorage.setItem('filterLongitude', $("#Position_longitude").val());
@@ -105,11 +106,13 @@ jQuery(document).ready(function() {
             $("#Position_longitude").val(localStorage.filterLongitude);
             $("#Position_latitude").textinput('enable');
             $("#Position_longitude").textinput('enable');
+            myMarker.setDraggable(true);
         } else {
             $("#Position_latitude").val(localStorage.latitude);
             $("#Position_longitude").val(localStorage.longitude);
             $("#Position_latitude").textinput('disable');
             $("#Position_longitude").textinput('disable');
+            myMarker.setDraggable(false);
         }
         updateCenterPin();
         addCircle();
