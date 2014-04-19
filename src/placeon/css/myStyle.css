@@ -89,13 +89,16 @@ ul.friendsList > li.unread {
 .announcementContainer {
     display: block;
     height: 100%;
+    width: 100%
 }
 .view > img {
     height: 100%;
     width: 100%;
 }
+
 @media screen and (min-width: 420px) {
-    .announcementContainer #map_canvas {
+    .announcementContainer #mapContainer
+    {
         width: 50%;
         left: 25%;
    }

@@ -244,17 +244,3 @@ function getFriendsPositions() {
         }
     });
 }
-/*
-function getFriendNotification(){
-  $.ajax({
-      type: "GET",
-      url: "../crugeUser/getFriendNotifications?id=4", 
-      success :function(data){       
-        $('#notificationList').val(data);
-        $('#notificationList').trigger( "create" );
-      },
-      error: function(error){
-        alert("an error has ocurred, please try again later");
-      }
-    });
-}*/
