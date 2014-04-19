@@ -39,10 +39,7 @@ class SiteController extends Controller
     // $this->redirect(Yii::app()->user->returnUrl); //url para el admin que maneja los usuarios
     $this->redirect(array('/cruge/ui/usermanagementadmin'));
     else {
-      $id = Yii::app()->user->id;
-      $isPlace = Yii::app()->user->um->getFieldValue($id, 'isPlace');
-      if ($isPlace) $this->redirect(array('/crugeuser/view?id=' . $id));
-      else $this->redirect(array('/site/map'));
+      $this->redirect(array('/site/map'));
     }
   }
   
