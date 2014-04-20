@@ -10,9 +10,9 @@
 <div class="view">
 
 
-    <label for="lat">Latitude:</label>
+    <b><label for="lat">Latitude:</label></b>
     <span  name="lat" id="positionLatitudeView" ><?php echo($data->latitude); ?></span>
-    <label for="long">Longitude:</label>
+    <b><label for="long">Longitude:</label></b>
     <span name="long" id="positionLongitudeView" ><?php echo($data->longitude); ?></span>
 
 	
