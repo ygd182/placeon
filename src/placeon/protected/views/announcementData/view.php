@@ -16,20 +16,14 @@ $this->menu=array(
 );
 ?>
 
-
-<h1>View AnnouncementData #<?php echo $model->data->id_state; ?></h1>
-<div class="announcementContainer"> 
-<?php 
-$this->renderPartial('../state/view', array('model'=>$state));
-$this->renderPartial('_view', array('data'=>$model));
-//$this->renderPartial('../image/_view', array('data'=>$image));
-/*
-$this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id_state',
-		'message',
-	),
-));*/ ?>
-
+<div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-c">
+    <h3>View AnnouncementData #<?php echo $model->data->id_state; ?></h3>
+  </div>
+  <div class="announcementContainer ui-body ui-body-c"> 
+  <?php 
+  $this->renderPartial('../state/view', array('model'=>$state));
+  $this->renderPartial('_view', array('data'=>$model));
+ ?>
+  </div>
 </div>
