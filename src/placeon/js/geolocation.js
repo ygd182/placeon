@@ -54,7 +54,7 @@ function onSuccess(pos) {
     //addMarker(center,"pepe",null);  
     localStorage.latitude = center.latitude;
     localStorage.longitude = center.longitude;
-    keepAlive(pos.coords.latitude, pos.coords.longitude);
+   // keepAlive(pos.coords.latitude, pos.coords.longitude);
 }
 // Error function for Geolocation call
 function onError(msg) {
