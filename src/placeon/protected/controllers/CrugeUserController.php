@@ -17,7 +17,7 @@ class CrugeUserController extends Controller
      // allow all users to perform 'index' and 'view' actions
     'actions' => array(''), 'users' => array('*'),), array('allow',
      // allow authenticated user to perform 'create' and 'update' actions
-    'actions' => array('getAll', ' get', 'view', 'delete', 'getFriendsNotifications','SetLastUpdate'), 'users' => array('@'),),
+    'actions' => array('getAll', 'get', 'view', 'delete', 'save', 'getFriendsNotifications','SetLastUpdate'), 'users' => array('@'),),
     );
   }
   
@@ -38,7 +38,35 @@ class CrugeUserController extends Controller
     );
     echo CJSON::encode($usuario);
   }
-  
+  public function actionSave() {
+    $userId = Yii::app()->user->id;
+    $currentUser = Yii::app()->user->um->loadUserById($userId, true);
+    $userPic = UserPicRelation::model()->findByPK($userId);
+   
+    if (isset($_POST['username'])) {
+      $currentUser->username = $_POST['username'];
+    }
+    if (isset($_POST['email'])) {
+      $currentUser->email = $_POST['email'];
+    }
+    $firephp = FirePHP::getInstance(true);
+    $firephp->log($userPic, "userPic");
+    if (isset($_POST['UserPicRelation']['image'])) {
+      if (is_null($userPic)) {
+        $userPic = new UserPicRelation;
+      }
+      $userPic->id_user = $userId;
+      $userPic->image = $_POST['UserPicRelation']['image'];
+      $userPic->image=CUploadedFile::getInstance($userPic,'image');
+      if ($userPic->save()) {
+        $userPic->image->saveAs($userPic->id_user . $userPic->image);
+      }
+    }
+    $currentUser->save();
+    $states = $this->getNotifications($userId);
+    $this->layout = 'multipage-template-viewFriend-Place';
+    $this->render('viewOwn', array('data' => $currentUser, 'states' => $states, 'profile_pic' => $userPic));
+  }
   //return friend Notifications
   protected function getNotifications($id) {
     $allNotificationsQuery = 'select * from state where id_user=' . $id . '           
@@ -114,15 +142,20 @@ class CrugeUserController extends Controller
     $isFriend = Friend::isFriend(Yii::app()->user->id, $id);
     
     $this->layout = 'multipage-template-viewFriend-Place';
-    
+    $pic = UserPicRelation::model()->findByPK($id);
+    if (is_null($pic)) {
+      $pic = new UserPicRelation;
+      $pic->id_user = $id;
+      $pic->image = null;
+    }
     if ($currentUserId == $id) {
       $states = $this->getNotifications($id);
-      $this->render('viewOwn', array('data' => $currentFriend, 'states' => $states));
+      $this->render('viewOwn', array('data' => $currentFriend, 'states' => $states, 'profile_pic' => $pic));
     } else {
-      if (!$isFriend) $this->render('viewNoFriend', array('data' => $currentFriend));
+      if (!$isFriend) $this->render('viewNoFriend', array('data' => $currentFriend, 'profile_pic' => $pic));
       else {
         $states = $this->getNotifications($id);
-        $this->render('view', array('data' => $currentFriend, 'states' => $states));
+        $this->render('view', array('data' => $currentFriend, 'states' => $states, 'profile_pic' => $pic));
       }
     }
   }

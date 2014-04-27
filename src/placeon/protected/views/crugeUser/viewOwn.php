@@ -1,17 +1,10 @@
-<div class="userView" data-iduser="<?php echo($data->iduser); ?>">
-  <h2>Information</h2>
-  <div data-role="fieldcontain" >
-    <label for="name">Username:</label>
-    <input type="text" name="name" id="name" value="<?php echo CHtml::encode($data->username); ?>"  />
-    <label for="email">Email:</label>
-    <input type="text" name="name" id="email" value="<?php echo CHtml::encode($data->email); ?>"  />
-    <a id="saveInformationButton"  href="#" data-ajax="false" data-role="button" data-inline="true" data-theme="b" data-icon="add" data-iconpos="left">Save</a>
-  </div>	
-  <br />
-  <br />
-  <br />
-  <br />
-  <div class="ui-bar-d ui-corner-all ui-shadow po-border">
+
+<?php
+
+/* @var $this CrugeUserController */
+/* @var $model CrugeUser */
+echo $this->renderPartial('_form', array('model'=>$data, 'profile_pic' => $profile_pic)); ?>
+<div class="ui-bar-d ui-corner-all ui-shadow po-border">
     <h2>States</h2>
     <ul class="friendsList" data-role="listview" data-autodividers="false" data-inset="true" data-filter="false">
       <?php $base=Yii::app()->request->baseUrl;
@@ -21,6 +14,4 @@
             echo '</li>';
       }?>
     </ul>
-  </div>
 </div>
-

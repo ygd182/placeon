@@ -1,15 +1,17 @@
 <div class="userView" data-iduser="<?php echo($data->iduser); ?>">
-  <h2>Information</h2>
-  <div data-role="fieldcontain" class="ui-disabled">
-    <label for="name">Username:</label>
-    <input type="text" name="name" id="name" value="<?php echo CHtml::encode($data->username); ?>"  />
-    <label for="email">Email:</label>
-    <input type="text" name="name" id="email" value="<?php echo CHtml::encode($data->email); ?>"  />
-  </div>	
+  <div class="background-pic"></div>
+  <?php if (empty($profile_pic) || ($profile_pic->image == null)) { ?>
+    <div class="profile-pic ui-bar-c ui-shadow po-border"></div>
+  <?php } else { ?>
+    <div class="profile-pic ui-bar-c ui-shadow po-border" style="background: url(<?php echo CHtml::encode('../../'.$profile_pic->id_user. $profile_pic->image); ?>) no-repeat;"></div>
+  <?php } ?>    <br />
+  <b><?php echo CHtml::encode($data->username); ?></b>
   <br />
+  <?php echo CHtml::encode($data->email); ?>
+  <br />
+  
   <a id="deleteFriendButton" href="#" data-ajax="false" data-role="button" data-inline="true" data-theme="b" data-icon="delete" data-iconpos="left">Delete friend</a>
-  <br />
-    <a id="setAlertfilter" href="<?php echo Yii::app()->request->baseUrl;?>/index.php/alertfilter/create?user2=<?php echo($data->iduser); ?>" data-ajax="false" data-role="button" data-inline="true" data-theme="b" data-icon="gear" data-iconpos="left">Configure alert filter</a>
+  <a id="setAlertfilter" href="<?php echo Yii::app()->request->baseUrl;?>/index.php/alertfilter/create?user2=<?php echo($data->iduser); ?>" data-ajax="false" data-role="button" data-inline="true" data-theme="b" data-icon="gear" data-iconpos="left">Configure alert filter</a>
   <br />
   <div class="ui-bar-d ui-corner-all ui-shadow po-border">
     <h2>States</h2>
