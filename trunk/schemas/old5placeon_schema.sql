@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 27-04-2014 a las 20:25:01
+-- Tiempo de generación: 26-04-2014 a las 17:55:04
 -- Versión del servidor: 5.5.24-log
--- Versión de PHP: 5.3.0
+-- Versión de PHP: 5.3.13
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `alertfilter` (
   `id_position` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `id_position` (`id_position`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
 
 --
 -- Volcado de datos para la tabla `alertfilter`
@@ -42,8 +42,7 @@ CREATE TABLE IF NOT EXISTS `alertfilter` (
 
 INSERT INTO `alertfilter` (`id`, `user_1`, `user_2`, `value`, `id_position`) VALUES
 (16, 3, 4, 99, NULL),
-(17, 4, 2, 999, NULL),
-(18, 4, 3, 999, NULL);
+(17, 4, 2, 999, NULL);
 
 -- --------------------------------------------------------
 
@@ -290,7 +289,7 @@ CREATE TABLE IF NOT EXISTS `cruge_session` (
   `ipaddressout` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idsession`),
   KEY `crugesession_iduser` (`iduser`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=347 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=346 ;
 
 --
 -- Volcado de datos para la tabla `cruge_session`
@@ -640,9 +639,8 @@ INSERT INTO `cruge_session` (`idsession`, `iduser`, `created`, `expire`, `status
 (341, 3, 1398310951, 1398910891, 0, '127.0.0.1', 1, 1398310951, 1398311045, '127.0.0.1'),
 (342, 7, 1398311051, 1398910991, 0, '127.0.0.1', 1, 1398311051, 1398311110, '127.0.0.1'),
 (343, 3, 1398311117, 1398911057, 0, '127.0.0.1', 1, 1398311117, 1398311164, '127.0.0.1'),
-(344, 3, 1398467809, 1399067749, 1, '127.0.0.1', 2, 1398629979, NULL, NULL),
-(345, 1, 1398467859, 1399067799, 1, '127.0.0.1', 1, 1398467859, NULL, NULL),
-(346, 4, 1398629903, 1399229843, 1, '127.0.0.1', 1, 1398629903, NULL, NULL);
+(344, 3, 1398467809, 1399067749, 1, '127.0.0.1', 1, 1398467809, NULL, NULL),
+(345, 1, 1398467859, 1399067799, 1, '127.0.0.1', 1, 1398467859, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -706,8 +704,8 @@ CREATE TABLE IF NOT EXISTS `cruge_user` (
 INSERT INTO `cruge_user` (`iduser`, `regdate`, `actdate`, `logondate`, `username`, `email`, `password`, `authkey`, `state`, `totalsessioncounter`, `currentsessioncounter`) VALUES
 (1, NULL, NULL, 1398467859, 'admin', 'admin@tucorreo.com', 'admin', NULL, 1, 0, 0),
 (2, NULL, NULL, NULL, 'invitado', 'invitado', 'invitado', NULL, 1, 0, 0),
-(3, 1376845914, NULL, 1398629979, 'pepe', 'pepe@mail.com', 'pepe12', '2e0e9d031309f89fb3615618fd2b6288', 1, 0, 0),
-(4, 1376845947, NULL, 1398629903, 'carlitos', 'carlitos@mail.com', 'carlitos', 'e2acd279dc6553e62bbab66999672ac1', 1, 0, 0),
+(3, 1376845914, NULL, 1398467809, 'pepe', 'pepe@mail.com', 'pepe12', '2e0e9d031309f89fb3615618fd2b6288', 1, 0, 0),
+(4, 1376845947, NULL, 1398030345, 'carlitos', 'carlitos@mail.com', 'carlitos', 'e2acd279dc6553e62bbab66999672ac1', 1, 0, 0),
 (5, 1378339184, NULL, NULL, 'juancito', 'aaa@aa.com', 'asdasdasd', 'ebab2001617d17a68440a776d4a8fb2a', 1, 0, 0),
 (6, 1378340060, NULL, 1378340915, 'figlio', 'f@m.com', 'figlio', '64d56d19e5e68b4b5bfe47ba10ca28b5', 1, 0, 0),
 (7, 1378698865, NULL, 1398311051, 'place1', 'place@m.com', 'place1', '9b655b917a892fdbb2bed16ada930f20', 1, 0, 0);
@@ -732,8 +730,7 @@ CREATE TABLE IF NOT EXISTS `friend` (
 
 INSERT INTO `friend` (`id_user1`, `id_user2`, `date`) VALUES
 (3, 4, '2013-12-02 11:02:29'),
-(4, 2, '2014-04-20 06:47:11'),
-(4, 3, '2014-04-27 05:20:22');
+(4, 2, '2014-04-20 06:47:11');
 
 -- --------------------------------------------------------
 
@@ -818,26 +815,6 @@ INSERT INTO `state` (`id`, `id_user`, `date`, `type`, `description`, `id_positio
 (3, 4, '2014-03-20 12:48:32', 'Announcement', 'a', 4),
 (6, 3, '2014-04-08 11:57:36', 'SharedUrl', 'rolling', 7),
 (7, 4, '2014-04-20 07:03:18', 'Announcement', 'p', 13);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `user_pic_relation`
---
-
-CREATE TABLE IF NOT EXISTS `user_pic_relation` (
-  `id_user` int(11) NOT NULL,
-  `image` varchar(200) DEFAULT NULL,
-  PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `user_pic_relation`
---
-
-INSERT INTO `user_pic_relation` (`id_user`, `image`) VALUES
-(3, '200.jpg'),
-(4, '200.jpg');
 
 -- --------------------------------------------------------
 

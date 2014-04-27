@@ -35,6 +35,7 @@ h4.powered.ui-title {
 }
 #map_canvas {
     width: 100%;
+
     height: 300px;
     display: block;
 }
@@ -94,18 +95,24 @@ ul.friendsList > li.unread {
     height: 100%;
     width: 100%;
 }
-.custom-corners .ui-bar {
-  -webkit-border-top-left-radius: inherit;
-  border-top-left-radius: inherit;
-  -webkit-border-top-right-radius: inherit;
-  border-top-right-radius: inherit;
+.profile-pic {
+    width: 190px;
+    height: 190px;
+    position: relative;
+    left: calc(50% - 100px);
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url('../no-pic.png') no-repeat;
 }
-.custom-corners .ui-body {
-  border-top-width: 0;
-  -webkit-border-bottom-left-radius: inherit;
-  border-bottom-left-radius: inherit;
-  -webkit-border-bottom-right-radius: inherit;
-  border-bottom-right-radius: inherit;
+.background-pic {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 190px;
+    position: absolute;
+    background: rgb(54, 25, 25); /* Fall-back for browsers that don't support rgba */
+    background: rgba(54, 25, 25, .25);
 }
 @media screen and (min-width: 420px) {
     .announcementContainer #mapContainer
