@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 27-04-2014 a las 20:25:01
+-- Tiempo de generación: 29-04-2014 a las 23:40:38
 -- Versión del servidor: 5.5.24-log
--- Versión de PHP: 5.3.0
+-- Versión de PHP: 5.3.13
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -70,30 +70,6 @@ CREATE TABLE IF NOT EXISTS `announcement_data` (
 INSERT INTO `announcement_data` (`id_state`, `message`, `image`) VALUES
 (3, 'a', '3Homer.jpg'),
 (7, 'p', 'CARTEL.gif');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `category`
---
-
-CREATE TABLE IF NOT EXISTS `category` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `city`
---
-
-CREATE TABLE IF NOT EXISTS `city` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
