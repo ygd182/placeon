@@ -28,7 +28,6 @@
          
           array('name' => 'Logout', 'url' =>  '/cruge/ui/logout', 'icon' => 'delete')
         ))); ?>
-		    <a id="notifications" href="#" data-iconpos="notext" data-role="button" data-icon="info"></a>
 			</div><!-- /header -->
 			<div  data-role="content" data-theme="b"  >	
 				<?php echo $content; ?>
