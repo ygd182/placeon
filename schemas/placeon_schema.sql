@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 29-04-2014 a las 23:40:38
+-- Tiempo de generación: 29-04-2014 a las 23:48:50
 -- Versión del servidor: 5.5.24-log
 -- Versión de PHP: 5.3.13
 
@@ -893,6 +893,12 @@ ALTER TABLE `shared_url_data`
 ALTER TABLE `state`
   ADD CONSTRAINT `state_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `cruge_user` (`iduser`),
   ADD CONSTRAINT `state_ibfk_2` FOREIGN KEY (`id_position`) REFERENCES `position` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `user_pic_relation`
+--
+ALTER TABLE `user_pic_relation`
+  ADD CONSTRAINT `user_pic_relation_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `cruge_user` (`iduser`);
 
 --
 -- Filtros para la tabla `user_position_relation`
