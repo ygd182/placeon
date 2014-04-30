@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 29-04-2014 a las 23:48:50
+-- Tiempo de generación: 30-04-2014 a las 00:07:47
 -- Versión del servidor: 5.5.24-log
 -- Versión de PHP: 5.3.13
 
@@ -33,7 +33,9 @@ CREATE TABLE IF NOT EXISTS `alertfilter` (
   `value` int(11) NOT NULL,
   `id_position` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `id_position` (`id_position`)
+  KEY `id_position` (`id_position`),
+  KEY `user_1` (`user_1`),
+  KEY `user_2` (`user_2`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
 
 --
@@ -845,7 +847,9 @@ INSERT INTO `user_position_relation` (`id_user`, `id_position`) VALUES
 -- Filtros para la tabla `alertfilter`
 --
 ALTER TABLE `alertfilter`
-  ADD CONSTRAINT `alertfilter_ibfk_1` FOREIGN KEY (`id_position`) REFERENCES `position` (`id`);
+  ADD CONSTRAINT `alertfilter_ibfk_3` FOREIGN KEY (`user_2`) REFERENCES `cruge_user` (`iduser`),
+  ADD CONSTRAINT `alertfilter_ibfk_1` FOREIGN KEY (`id_position`) REFERENCES `position` (`id`),
+  ADD CONSTRAINT `alertfilter_ibfk_2` FOREIGN KEY (`user_1`) REFERENCES `cruge_user` (`iduser`);
 
 --
 -- Filtros para la tabla `announcement_data`
