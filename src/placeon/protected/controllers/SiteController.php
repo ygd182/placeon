@@ -2,6 +2,33 @@
 class SiteController extends Controller
 {
   
+  
+     public function filters()
+    {
+        return array( 'accessControl' );
+    }
+	
+  public function accessRules()
+    {
+        return array(
+  	// allow all users to perform login action
+            array('allow',
+                'actions'=>array('login','LoginMobile','index'),
+                'users'=>array('*'),
+            ),
+     	// allow authenticated user to perform map action
+            array('allow',
+                'actions'=>array('map'),
+                'roles'=>array('@'),
+            ),
+	// allow admin user to perform 'admin' action
+            array('allow',
+                'actions'=>array('admin'),
+                'users'=>array('admin'),
+            ),
+        );
+    }
+
   /**
    * Declares class-based actions.
    */
