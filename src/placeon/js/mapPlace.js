@@ -288,5 +288,6 @@ function addAddress() {
         longitude: 0
     };
     var marker = addMarker(center, '', null, null);
+	loadInfo(marker,'Save your position');
     google.maps.event.trigger(marker, 'click');
 }
