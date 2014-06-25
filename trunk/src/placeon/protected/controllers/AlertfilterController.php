@@ -81,7 +81,7 @@ class AlertfilterController extends Controller
        }else{
           $alertFilter->id_position = null;
           if ($alertFilter->save()) {
-            $position->delete();
+           // $position->delete();
             $this->redirect(array('create', 'user2' => $alertFilter->user_2));
            }
        }
