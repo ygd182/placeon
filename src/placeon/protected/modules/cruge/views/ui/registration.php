@@ -23,11 +23,11 @@
 	?>
 	<div class="col">
 		<?php echo $form->labelEx($model,'newPassword'); ?>
-		<div class='item'>
+
 			<?php echo $form->textField($model,'newPassword'); ?>
 			<p class='hint'><?php echo CrugeTranslator::t(
 				"su contraseña, letras o digitos o los caracteres @#$%. minimo 6 simbolos.");?></p>
-		</div>
+
 		<?php echo $form->error($model,'newPassword'); ?>
 		<script>
 			function fnSuccess(data){
@@ -52,13 +52,17 @@
 	if(count($model->getFields()) > 0){
 		echo "<div class='row form-group-vert'>";
 		echo "<h6>".ucfirst(CrugeTranslator::t("perfil"))."</h6>";
+		$i=0;
 		foreach($model->getFields() as $f){
+			if($i<1){
 			// aqui $f es una instancia que implementa a: ICrugeField
 			echo "<div class='col'>";
 			echo Yii::app()->user->um->getInputField($model,$f);
-      echo '<label for="CrugeStoredUser_isPlace">'.Yii::app()->user->um->getLabelField($f).'</label>';
+			echo '<label for="CrugeStoredUser_isPlace">'.Yii::app()->user->um->getLabelField($f).'</label>';
 			echo $form->error($model,$f->fieldname);
 			echo "</div>";
+			$i++;
+			}
 		}
 		echo "</div>";
 	}
