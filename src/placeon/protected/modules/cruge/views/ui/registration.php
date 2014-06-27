@@ -49,7 +49,7 @@
 <?php 
 	if(count($model->getFields()) > 0){
 		echo "<div class='row form-group-vert'>";
-		echo "<h6>".ucfirst(CrugeTranslator::t("perfil"))."</h6>";
+		echo "<h6>".ucfirst(CrugeTranslator::t("profile"))."</h6>";
 		$i=0;
 		foreach($model->getFields() as $f){
 			if($i<1){
