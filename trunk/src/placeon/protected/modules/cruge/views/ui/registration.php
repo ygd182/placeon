@@ -1,4 +1,4 @@
-<h1><?php echo ucwords(CrugeTranslator::t("registrarse"));?></h1>
+<h1><?php echo ucwords(CrugeTranslator::t("register"));?></h1>
 <div class="form">
 <?php
 	/*
@@ -11,7 +11,7 @@
     'enableClientValidation'=>false,
 )); ?>
 <div class="row form-group-vert">
-	<h6><?php echo ucfirst(CrugeTranslator::t("datos de la cuenta"));?></h6>
+	<h6><?php echo ucfirst(CrugeTranslator::t("Account data"));?></h6>
 	<?php 
 		foreach (CrugeUtil::config()->availableAuthModes as $authmode){
 			echo "<div class='col'>";
@@ -25,8 +25,6 @@
 		<?php echo $form->labelEx($model,'newPassword'); ?>
 
 			<?php echo $form->textField($model,'newPassword'); ?>
-			<p class='hint'><?php echo CrugeTranslator::t(
-				"su contraseña, letras o digitos o los caracteres @#$%. minimo 6 simbolos.");?></p>
 
 		<?php echo $form->error($model,'newPassword'); ?>
 		<script>
@@ -38,7 +36,7 @@
 			}
 		</script>
 		<?php echo CHtml::ajaxbutton(
-			CrugeTranslator::t("Generar una nueva clave")
+			CrugeTranslator::t("Generate a new password")
 			,Yii::app()->user->ui->ajaxGenerateNewPasswordUrl
 			,array('success'=>new CJavaScriptExpression('fnSuccess'),
 				'error'=>new CJavaScriptExpression('fnError'))

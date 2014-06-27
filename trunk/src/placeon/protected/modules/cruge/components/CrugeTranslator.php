@@ -14,7 +14,7 @@ class CrugeTranslator
     public static function t($category, $keyword = null, $params = array())
     {
 
-        //$lang = Yii::app()->language;
+        $lang = Yii::app()->language;
         // Agregado para evitar incompatibilidad
         // Así que debe eliminarse cuando se termine la traducción
         if (empty($keyword)) {

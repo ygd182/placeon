@@ -380,18 +380,18 @@ class CrugeStoredUser extends CActiveRecord implements ICrugeStoredUser
     public function attributeLabels()
     {
         return array(
-            'idusuario' => ucfirst(CrugeTranslator::t('usuario#')),
+            'idusuario' => ucfirst(CrugeTranslator::t('user#')),
             'username' => ucfirst(CrugeTranslator::t('username')),
-            'email' => ucfirst(CrugeTranslator::t('correo')),
-            'password' => ucfirst(CrugeTranslator::t('clave')),
-            'authkey' => ucfirst(CrugeTranslator::t('llave de autenticacion')),
-            'state' => ucfirst(CrugeTranslator::t('estado de la cuenta')),
-            'newPassword' => ucfirst(CrugeTranslator::t('clave')),
-            'deleteConfirmation' => ucfirst(CrugeTranslator::t('confirmar eliminacion')),
-            'regdate' => ucfirst(CrugeTranslator::t('registrado')),
-            'actdate' => ucfirst(CrugeTranslator::t('activado')),
-            'logondate' => ucfirst(CrugeTranslator::t('ultimo acceso')),
-            'terminosYCondiciones' => ucfirst(CrugeTranslator::t('comprendo y acepto, por favor registrarme')),
+            'email' => ucfirst(CrugeTranslator::t('email')),
+            'password' => ucfirst(CrugeTranslator::t('password')),
+            'authkey' => ucfirst(CrugeTranslator::t('authkey')),
+            'state' => ucfirst(CrugeTranslator::t('account state')),
+            'newPassword' => ucfirst(CrugeTranslator::t('password')),
+            'deleteConfirmation' => ucfirst(CrugeTranslator::t('confirm delete')),
+            'regdate' => ucfirst(CrugeTranslator::t('registered')),
+            'actdate' => ucfirst(CrugeTranslator::t('activated')),
+            'logondate' => ucfirst(CrugeTranslator::t('last access')),
+            'terminosYCondiciones' => ucfirst(CrugeTranslator::t('i accept the terms and conditions')),
         );
     }
 
