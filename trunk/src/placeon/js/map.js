@@ -34,6 +34,7 @@ function addMarker(pos, info, image) {
         position: latlng,
         //icon: image
     });
+	marker.setZIndex(9);
     if (image != null) marker.setIcon(image);
     loadInfo(marker, info);
     return marker;
@@ -150,7 +151,8 @@ function onSuccess(pos) {
     if (marker) { //si ya esta cargada mi pos
         var latlng = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
         marker.setPosition(latlng);
-    } else marker = addMarker(center, "me", "../../images/images/yellow-pin.png");
+    } else marker = addMarker(center, "me", "http://www.exploreaustintexas.com/images/walking_icon.png");
+	marker.setZIndex(9);
     getFriendsNotification(center.latitude, center.longitude);
 }
 // Error function for Geolocation call
