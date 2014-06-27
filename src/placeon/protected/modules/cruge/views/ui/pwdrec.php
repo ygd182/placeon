@@ -1,4 +1,4 @@
-<h1><?php echo CrugeTranslator::t("Recuperar la clave"); ?></h1>
+<h1><?php echo CrugeTranslator::t("Retrieve password"); ?></h1>
 
 <?php if(Yii::app()->user->hasFlash('pwdrecflash')): ?>
 <div class="flash-success">
@@ -27,13 +27,13 @@
 		<?php $this->widget('CCaptcha'); ?>
 		<?php echo $form->textField($model,'verifyCode'); ?>
 		</div>
-		<div class="hint"><?php echo CrugeTranslator::t("por favor ingrese los caracteres o digitos que vea en la imagen");?></div>
+		<div class="hint"><?php echo CrugeTranslator::t("please type the characters or digits that you see on the image");?></div>
 		<?php echo $form->error($model,'verifyCode'); ?>
 	</div>
 	<?php endif; ?>
 	
 	<div class="row buttons">
-		<?php Yii::app()->user->ui->tbutton("Recuperar la Clave"); ?>
+		<?php Yii::app()->user->ui->tbutton("Retrieve password"); ?>
 	</div>
 	
 <?php $this->endWidget(); ?>
