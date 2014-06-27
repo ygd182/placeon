@@ -97,7 +97,7 @@
 			<?php $this->widget('CCaptcha'); ?>
 			<?php echo $form->textField($model,'verifyCode'); ?>
 		</div>
-		<div class="hint"><?php echo CrugeTranslator::t("por favor ingrese los caracteres o digitos que vea en la imagen");?></div>
+		<div class="hint"><?php echo CrugeTranslator::t("please type the characters or digits that you see on the image");?></div>
 		<?php echo $form->error($model,'verifyCode'); ?>
 	</div>
 </div>
@@ -107,7 +107,7 @@
 
 
 <div class="row buttons">
-	<?php Yii::app()->user->ui->tbutton("Registrarse"); ?>
+	<?php Yii::app()->user->ui->tbutton("Register"); ?>
 </div>
 <?php echo $form->errorSummary($model); ?>
 <?php $this->endWidget(); ?>
