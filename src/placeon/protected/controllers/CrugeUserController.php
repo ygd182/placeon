@@ -49,8 +49,8 @@ class CrugeUserController extends Controller
     if (isset($_POST['email'])) {
       $currentUser->email = $_POST['email'];
     }
-    $firephp = FirePHP::getInstance(true);
-    $firephp->log($userPic, "userPic");
+    //$firephp = FirePHP::getInstance(true);
+    //$firephp->log($userPic, "userPic");
     if (isset($_POST['UserPicRelation']['image'])) {
       if (is_null($userPic)) {
         $userPic = new UserPicRelation;
@@ -95,6 +95,9 @@ class CrugeUserController extends Controller
         $posLon = $pos->longitude;
         $distance = $this->calculateDistance($currentLat, $currentLon, $posLat, $posLon);
         if ($distance > $filterDistance) unset($allNotifications[$key]);
+        $firephp = FirePHP::getInstance(true);
+        $firephp->log($distance, "distance");
+        $firephp->log($filterDistance, "filterDistance");
       }
     }
     return $allNotifications;
@@ -178,13 +181,11 @@ class CrugeUserController extends Controller
     $this->render('viewAll', array('content' => $usuarios));
   }
   public function calculateDistance($lat1, $lng1, $lat2, $lng2) {
-    $r = 6372.797;
-     // radio de la Tierra en km
-    $dlat = $lat2 - $lat1;
-    $dlng = $lng2 - $lng1;
-    $a = sin($dlat / 2) * sin($dlat / 2) + cos($lat1) * cos($lat2) * sin($dlng / 2) * sin($dlng / 2);
-    $c = 2 * atan2(sqrt($a), sqrt(1 - $a));
-    $km = $r * $c;
+    $theta = $lng1 - $lng2;
+    $dist = sin(deg2rad($lat1)) * sin(deg2rad($lat2)) +  cos(deg2rad($lat1)) * cos(deg2rad($lat2)) * cos(deg2rad($theta));
+    $dist = acos($dist);
+    $dist = rad2deg($dist);
+    $km = $dist * 60 * 1.1515 * 1.609344;
     return ($km);
   }
 }
