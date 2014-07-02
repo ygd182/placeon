@@ -95,9 +95,6 @@ class CrugeUserController extends Controller
         $posLon = $pos->longitude;
         $distance = $this->calculateDistance($currentLat, $currentLon, $posLat, $posLon);
         if ($distance > $filterDistance) unset($allNotifications[$key]);
-        $firephp = FirePHP::getInstance(true);
-        $firephp->log($distance, "distance");
-        $firephp->log($filterDistance, "filterDistance");
       }
     }
     return $allNotifications;
