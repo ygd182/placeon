@@ -169,7 +169,7 @@ function calculateMyPosition() {
 
 function timeout_callback() {
     calculateMyPosition();
-    getFriendsPositions();
+    //getFriendsPositions();
     //getFriendsNotification(localStorage.getItem('latitude'), localStorage.getItem('longitude'));
 }
 jQuery(document).ready(function() {
@@ -239,7 +239,7 @@ function getFriendsPositions() {
         url: "../position/getallfriends",
         success: function(data) {
             loadFriends(jQuery.parseJSON(data));
-            //console.log(jQuery.parseJSON(data)[0]);
+            console.log(jQuery.parseJSON(data));
         },
         error: function(error) {
             alert("an error has ocurred, please try again later");
